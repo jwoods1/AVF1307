@@ -20,81 +20,100 @@
 <html ng-app="App">
 <head>
     <meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>AVF1307 Jason Woods APP DEMO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    
+
+    
    
 
-    <title>Angular PhoneGap Seed</title>
-</head>
-<body>
     
-<div ng-controller="CollapseDemoCtrl">
-    <button class="btn" ng-click="isCollapsed = !isCollapsed">Toggle collapse</button>
-    <hr>
-    <div collapse="isCollapsed">
-        <div class="well well-large">Some Angularjs</div> 
-    </div>
-    </div>
-        <div class="header-container">
-            <header class="wrapper clearfix">
-                <h1 class="title">AVF 1307</h1>
-                <nav>
-                    <ul>
-                        <li><a class="navA" href="#">Location</a></li>
-                        <li><a class="navA" href="#">Camera</a></li>
-                        <li><a class="navA" href="#">Discussion</a></li>
-                        <li><a class="navA" href="#">Data API</a></li>
+</head>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+  
+
+
+  <body>
+        <div id="wrap">
+
+      <!-- Fixed navbar -->
+      <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container"> <a class="brand" href="#">
+                 AVF 1307 APP Demo
+                </a>
+
+            <ul class="nav" >
+                <li class="divider-vertical"></li>
+                <li class="dropdown"> <a href="#" class="dropdown-toggle">
+                           Discussions<b class="caret"></b>
+                        </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#/list">Week 1</a>
+                        </li>
+                        <li><a href="#/list">Week 2</a>
+                        </li>
+                         <li><a href="#/list">Week 3</a>
+                        </li>
+                        <li><a href="#/list">Week 4</a>
+                        </li>
                     </ul>
-                </nav>
-            </header>
+                </li>
+                <li class="divider-vertical"></li>
+                <li class="dropdown"> <a href="#" class="dropdown-toggle">
+                            Videos<b class="caret"></b>
+                        </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#/list">Week 1</a>
+                        </li>
+                        <li><a href="#/list">Week 2</a>
+                        </li>
+                         <li><a href="#/list">Week 3</a>
+                        </li>
+                         <li><a href="#/list">Week 4</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="divider-vertical"></li>
+            </ul>
         </div>
-
-        <div class="main-container">
-            <div class="main wrapper clearfix">
-
-                <article>
-                    <header>
-                        <h1>article header h1</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
-                    </header>
-                    <section>
-                        <h2>article section h2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-                    </section>
-                    <section>
-                        <h2>article section h2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-                    </section>
-                    <footer>
-                        <h3>article footer h3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
-                    </footer>
-                </article>
-
-                <aside>
-                    <h3>aside</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
-                </aside>
-
-            </div> <!-- #main -->
-        </div> <!-- #main-container -->
-
-        <div class="footer-container">
-            <footer class="wrapper">
-                <h3>footer</h3>
-            </footer>
+    </div>
+</div>
+      <!-- Begin page content -->
+    <div class="container">
+        <div class="page-header">
+          <h1>Native Demo Items</h1>
+      
         </div>
+    </div>
+</div>
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">By Jason Woods <a href="www.fullsail.edu">Full Sail University</a> </p>
+      </div>
+    </div>
 
     <!-- Libs -->
     <script type="text/javascript" src="lib/cordova.js"></script>
+    <script type="text/javascript" src="lib/jquery.js"></script>
     <script type="text/javascript" src="lib/angular-1.1.5.js"></script>
     <script type="text/javascript" src="lib/ui-bootstrap-custom-tpls-0.4.0.min.js"></script>
-
+    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
     <!-- App -->
-   
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/services.js"></script>
     <script type="text/javascript" src="js/controllers.js"></script>
     <script type="text/javascript">
         app.initialize();

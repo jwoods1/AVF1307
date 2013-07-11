@@ -1,5 +1,3 @@
-angular.module('App', ['ui.bootstrap'])
-    function CollapseDemoCtrl($scope) {
-  $scope.isCollapsed = false;
-}
- 
+var myApp = angular.module('App', ['ui.bootstrap.dropdownToggle']);
+
+function MyCtrl($scope) {}
