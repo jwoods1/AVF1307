@@ -19,6 +19,7 @@
 
   html,
       body {
+        background-color: rgb(228, 226, 226);
         height: 100%;
       
         /* The html and body elements cannot have any padding or margin. */
@@ -46,13 +47,15 @@
       }
 
       /* Lastly, apply responsive CSS fixes as necessary */
-      @media (max-width: 767px) {
+      @media (min-width: 768px) {
         #footer {
           margin-left: -20px;
           margin-right: -20px;
           padding-left: 20px;
           padding-right: 20px;
         }
+        
+        
       }
     .muted .credit{
         display:inline;
@@ -66,8 +69,16 @@
 
       -------------------------------------------------- */
       /* Not required for template or sticky footer method. */
-
+        
+        
+        .img-polaroid{
+            box-shadow: 5px 5px 5px #000000;
+        }
       #wrap > .container {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width:80%;
         background-color: gray;
         padding-top: 60px;
         box-shadow: 5px 5px 5px #888888;
