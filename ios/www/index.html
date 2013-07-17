@@ -100,7 +100,7 @@
                 <div ng-controller="iconCtrl" class="row">
                     <div ng-repeat='image in images' class="span3">
                         <ul>
-                            <li><a href="index.html/camera"><img class="img-polaroid" ng-src="{{image.image}}" alt="{{image.description}}"></a>
+                            <li><a href="index.html/camera"><img ng-src="{{image.image}}" alt="{{image.description}}"></a>
                                 <ul>
                                     <li><h3>{{image.description}}</h3></li>
                                 </ul>
@@ -111,17 +111,16 @@
             </div>
             <div ng-controller="instagramCtrl">
                 <h3>{{instagramResults.data.0.images.standard_resolution.url}}</h3>
-               
-                        <ul><li>{{images.url}}
-                        </li>
-                            <li><img class="img-polaroid" ng-src="{{standard_resolution.url}}" alt="{{user.username}}">
+               <div ng-repeat="images in instagramResult.data">
+                        <ul>
+                            <li><img ng-src="{{images.standard_resolution.url}}" alt="{{user.username}}">
                                 <ul>
                                     <li><h3>{{instagramResult.data.user.username}}</h3></li>
                                 </ul>
                             </li>
                         </ul>
             
-
+            </div>
     </div>
 
     <div id="footer">
