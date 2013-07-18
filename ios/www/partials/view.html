@@ -1,1 +1,16 @@
-<h1> New View: {{ status }} </h1>
+<div class="container fixed">
+                <div class="page-header">
+                  <h1>Captured Items</h1>
+                </div>
+                <div ng-controller="CaptureCtrl" class="row">
+                    <div ng-repeat='i in instagramResult.data'class="span3">
+                        <ul>
+                            <li> <img class="img-polaroid" ng-src={{i.images.standard_resolution.url}} alt="insta image">
+                                <ul>
+                                    <li><h3>{{status}}</h3></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>

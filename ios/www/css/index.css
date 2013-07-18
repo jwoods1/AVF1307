@@ -71,7 +71,10 @@
 
       -------------------------------------------------- */
       /* Not required for template or sticky footer method. */
-        
+        .page-header{
+          margin-top: 40px;
+          text-align: center;
+        }
         ul li{
           list-style:none;
         }
