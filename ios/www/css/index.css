@@ -72,7 +72,7 @@
       -------------------------------------------------- */
       /* Not required for template or sticky footer method. */
         .page-header{
-          margin-top: 40px;
+          margin-top: 30px;
           text-align: center;
         }
         ul li{
@@ -80,9 +80,19 @@
         }
         
         .img-polaroid{
-            width: 140px; 
-            height: 140px;
             box-shadow: 5px 5px 5px #000000;
+        }
+        #imageWrapper{
+          width:600px;
+          overflow: auto;
+        }
+        .imageList{
+          white-space: nowrap;
+          margin: 0px;
+          
+        }
+        img{
+          display:inline;
         }
       #wrap > .container {
 

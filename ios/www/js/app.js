@@ -10,8 +10,13 @@ angular.module('App', ['App.services','App.controllers'])
             
         })
         .when('/index.html/Capture', {
-            controller: 'CaptureCtrl',
+            controller: 'InstagramCtrl',
             templateUrl: 'partials/view.html'
         })
         .otherwise({redirectTo: '/index.html'});
     }]);
+
+
+
+
+

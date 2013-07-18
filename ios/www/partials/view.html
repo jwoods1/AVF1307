@@ -1,16 +1,29 @@
 <div class="container fixed">
                 <div class="page-header">
-                  <h1>Captured Items</h1>
+                  <h1>Instagram Popular</h1>
                 </div>
-                <div ng-controller="CaptureCtrl" class="row">
-                    <div ng-repeat='i in instagramResult.data'class="span3">
+                <div ng-controller="InstagramCtrl" class="row">
+                    <div ng-repeat='i in instagramResult.data'class="span4">
                         <ul>
                             <li> <img class="img-polaroid" ng-src={{i.images.standard_resolution.url}} alt="insta image">
                                 <ul>
-                                    <li><h3>{{status}}</h3></li>
+                                    <li><h3>{{i.user.username}}</h3></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div ng-controller="TwitterCtrl" class="row">
+                    <div ng-repeat='0 in twitterResult' class="span3">
+                        <ul>
+                            <li> <h3>{{0.text}}</h3>
+                                <ul>
+                                    <li><h3>{{i.user.name}}</h3></li>
                                 </ul>
                             </li>
                         </ul>
                     </div>
                 </div>
+                
             </div>
