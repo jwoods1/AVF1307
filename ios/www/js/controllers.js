@@ -18,8 +18,8 @@ function iconCtrl($scope){
  	$scope.instagramResult = $scope.instagram.get();
 }
 function TumblrCtrl($scope, $resource){
-  var tag="pics";
-  $scope.tumblr = $resource('http://api.tumblr.com/v2/tagged?tag='+tag+'&api_key=V5UIK7kNJrGaaCPY8hJeLmg8Ipqc96GoxkDDNW6pXpJQgBujng',
+  $scope.tag={tag:'pics'};
+  $scope.tumblr = $resource('http://api.tumblr.com/v2/tagged?tag='+$scope.tag.tag+'&api_key=V5UIK7kNJrGaaCPY8hJeLmg8Ipqc96GoxkDDNW6pXpJQgBujng',
     {q:'angularjs',callback:'JSON_CALLBACK'},{get:{method:'JSONP'}});
 
   $scope.tumblrResult = $scope.tumblr.get(); 

@@ -56,7 +56,10 @@
           padding-left: 20px;
           padding-right: 20px;
         }
-        
+        .span3{
+  		width: 460px;
+  		}
+}
         
       }
     .muted .credit{

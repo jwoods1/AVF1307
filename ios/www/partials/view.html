@@ -1,8 +1,10 @@
 <div class="container fixed">
                 <div class="page-header">
+                   
                   <h1>Instagram Popular</h1>
                 </div>
-                <div ng-controller="InstagramCtrl" class="row">
+                <div ng-controller="InstagramCtrl">
+                    <div  class="row">
                     <div ng-repeat='i in instagramResult.data'class="span4">
                         <ul>
                             <li> <img class="img-polaroid" ng-src={{i.images.standard_resolution.url}} alt="insta image">
@@ -13,20 +15,20 @@
                         </ul>
                     </div>
                 </div>
-                <div class="page-header">
+                      <div class="page-header">
                   <h1>Tumblr Popular</h1>
                 </div>
                 <div ng-controller="TumblrCtrl" class="row">
                     <div ng-repeat="i in tumblrResult.response"class="span4">
                         <ul>
-                            <li><img class="img-polariod" ng-src={{i.photos.0.original_size.url}} alt="tumblr">
+                            <li> <img class="img-polaroid" ng-src={{i.photos.0.original_size.url}} alt="tumblr">
                                 <ul>
                                     <li>
-                                        <h3>{{i.blog_name}}</h3></li>
+                                        <p class="tumP">{{i.blog_name}}</p></li>
                                 </ul>
                             </li>
                         </ul>
                     </div>
                 </div>
-
+                </div>
             </div>

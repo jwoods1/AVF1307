@@ -19,7 +19,7 @@
                 <div ng-controller="TumblrCtrl" class="row">
                     <div ng-repeat="i in tumblrResult.response"class="span4">
                         <ul>
-                            <li><img class="img-polariod" ng-src={{i.photos.0.original_size.url}} alt="tumblr">
+                            <li><img class="img-polariod decoded" ng-src={{i.photos.0.original_size.url}} alt="tumblr">
                                 <ul>
                                     <li>
                                         <h3>{{i.blog_name}}</h3></li>
