@@ -13,6 +13,11 @@ angular.module('App', ['App.services','App.controllers'])
             controller: 'InstagramCtrl',
             templateUrl: 'partials/view.html'
         })
+
+        .when('/index.html/Dicussions', {
+            controller: 'DiscussionCtrl',
+            templateUrl: 'partials/Discussions.html'
+        })
         .otherwise({redirectTo: '/index.html'});
     }]);
 

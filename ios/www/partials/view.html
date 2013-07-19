@@ -12,18 +12,21 @@
                             </li>
                         </ul>
                     </div>
-                    
                 </div>
-                <div ng-controller="TwitterCtrl" class="row">
-                    <div ng-repeat='0 in twitterResult' class="span3">
+                <div class="page-header">
+                  <h1>Tumblr Popular</h1>
+                </div>
+                <div ng-controller="TumblrCtrl" class="row">
+                    <div ng-repeat="i in tumblrResult.response"class="span4">
                         <ul>
-                            <li> <h3>{{0.text}}</h3>
+                            <li><img class="img-polariod" ng-src={{i.photos.0.original_size.url}} alt="tumblr">
                                 <ul>
-                                    <li><h3>{{i.user.name}}</h3></li>
+                                    <li>
+                                        <h3>{{i.blog_name}}</h3></li>
                                 </ul>
                             </li>
                         </ul>
                     </div>
                 </div>
-                
+
             </div>

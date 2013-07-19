@@ -8,7 +8,7 @@ function iconCtrl($scope){
       {image : 'img/icon.png', description : 'Geolocation'},
       {image : 'img/Internet.png', description : 'InAppBrowser'},
       {image : 'img/Media.png', description : 'Media'},
-      {image : 'img/Gears.png', description : 'APIs'}
+      {image : 'img/Gears.png', description : 'Discussions'}
   ];
 };
  function InstagramCtrl($scope, $resource){
@@ -17,13 +17,21 @@ function iconCtrl($scope){
  	
  	$scope.instagramResult = $scope.instagram.get();
 }
-function TwitterCtrl($scope, $resource){
-  $scope.twitter = $resource('http://thecadmus.com/api/twitter/statuses/10?key=3a23b0a6-f653-1274-4a34-1abbd4c267c8',
-    {action:'search.json',q:'angularjs',callback:'JSON_CALLBACK'},{get:{method:'JSONP'}});
+function TumblrCtrl($scope, $resource){
+  var tag="pics";
+  $scope.tumblr = $resource('http://api.tumblr.com/v2/tagged?tag='+tag+'&api_key=V5UIK7kNJrGaaCPY8hJeLmg8Ipqc96GoxkDDNW6pXpJQgBujng',
+    {q:'angularjs',callback:'JSON_CALLBACK'},{get:{method:'JSONP'}});
 
-  $scope.twitterResult = $scope.twitter.get();   
+  $scope.tumblrResult = $scope.tumblr.get(); 
+
 }
 
-// Twetter    nyudUtZWErXcdYGvxZlg token    564805951-Zuhvx9AoDV9RKLG1gT8Aqbn0IoZFE3Rg7dAqvaMv Secret TAmpI2oSiCCatSjua4VP5MbCKrkniyWSoueyj1JU
+//V5UIK7kNJrGaaCPY8hJeLmg8Ipqc96GoxkDDNW6pXpJQgBujng
+//n7OmEbW3gHC0Qges8nz5zOPeqQpeYclyUbczGOOEbXI1O1FdF8 Secure
+function DiscussionCtrl($scope){
+  $scope.disc1 = "Discussion Week 1";
+}
 
-//3a23b0a6-f653-1274-4a34-1abbd4c267c8
+//e4b0dec3215d800666d000845ad664ff
+
+//Secret:6d6124db5dce47b0 

@@ -77,23 +77,13 @@
         }
         ul li{
           list-style:none;
+          
         }
         
         .img-polaroid{
             box-shadow: 5px 5px 5px #000000;
         }
-        #imageWrapper{
-          width:600px;
-          overflow: auto;
-        }
-        .imageList{
-          white-space: nowrap;
-          margin: 0px;
-          
-        }
-        img{
-          display:inline;
-        }
+        
       #wrap > .container {
 
         text-align: center;
