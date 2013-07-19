@@ -71,16 +71,19 @@
 
       -------------------------------------------------- */
       /* Not required for template or sticky footer method. */
-        
+        .page-header{
+          margin-top: 30px;
+          text-align: center;
+        }
         ul li{
           list-style:none;
+          
         }
         
         .img-polaroid{
-            width: 140px; 
-            height: 140px;
             box-shadow: 5px 5px 5px #000000;
         }
+        
       #wrap > .container {
 
         text-align: center;

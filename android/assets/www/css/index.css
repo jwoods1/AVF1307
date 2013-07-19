@@ -22,6 +22,7 @@
         background-color: rgb(228, 226, 226);
         height: 100%;
       
+      
         /* The html and body elements cannot have any padding or margin. */
       }
 
@@ -33,8 +34,9 @@
         min-height: 100%;
         height: auto !important;
         height: 100%;
+
         /* Negative indent footer by it's height */
-        margin:60px;
+        margin:10px;
       }
 
       /* Set the fixed height of the footer here */
@@ -69,16 +71,25 @@
 
       -------------------------------------------------- */
       /* Not required for template or sticky footer method. */
-        
+        .page-header{
+          margin-top: 30px;
+          text-align: center;
+        }
+        ul li{
+          list-style:none;
+          
+        }
         
         .img-polaroid{
             box-shadow: 5px 5px 5px #000000;
         }
+        
       #wrap > .container {
+
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        width:80%;
+        width:95%;
         background-color: gray;
         padding-top: 60px;
         box-shadow: 5px 5px 5px #888888;
