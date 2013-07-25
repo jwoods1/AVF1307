@@ -17,5 +17,37 @@ angular.module('App.services', [])
                 return impl.apply(this, arguments);
             };
         };
-    }]);
+    }])
+    .factory('accelerometer', function ($rootScope, cordovaReady) {
+        return {
+
+            watchAcceleration: cordovaReady(function (onSuccess, onError, options) {
+              var options = { frequency: 40 };
+              navigator.accelerometer.watchAcceleration(function () {
+                 
+
+                var that = this,
+                  args = arguments;
+
+                if (onSuccess) {
+                  $rootScope.$apply(function () {
+                    onSuccess.apply(that, args);
+                  });
+                }
+              }, function () {
+                var that = this,
+                  args = arguments;
+
+                if (onError) {
+                  $rootScope.$apply(function () {
+                    onError.apply(that, args);
+                  });
+                }
+              });
+
+            })
+      };
+})
+    .factory('camera', function ($rootScope, cordovaReady){})
+
     

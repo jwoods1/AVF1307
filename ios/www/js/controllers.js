@@ -1,4 +1,4 @@
-angular.module('App.controllers',['ngResource','infinite-scroll']);
+angular.module('App.controllers',['ngResource','App.services']);
 function iconCtrl($scope){
   $scope.images = [
       {image : 'img/Camera.png', description : 'Camera'},
@@ -18,20 +18,35 @@ function iconCtrl($scope){
  	$scope.instagramResult = $scope.instagram.get();
 }
 function TumblrCtrl($scope, $resource){
-  $scope.tag={tag:'pics'};
+  $scope.tag={tag:'popular'};
   $scope.tumblr = $resource('http://api.tumblr.com/v2/tagged?tag='+$scope.tag.tag+'&api_key=V5UIK7kNJrGaaCPY8hJeLmg8Ipqc96GoxkDDNW6pXpJQgBujng',
     {q:'angularjs',callback:'JSON_CALLBACK'},{get:{method:'JSONP'}});
 
   $scope.tumblrResult = $scope.tumblr.get(); 
 
 }
+function AccelCtrl($scope, accelerometer){
+  
+  var options= {frequency: 40 };
+  accelerometer.watchAcceleration(function (acceleration, options){
+    $scope.X =acceleration.x;
+    $scope.Y =acceleration.y;
+    $scope.Z =acceleration.z;
+    $scope.T =acceleration.timestamp;       
+        
+  });
 
-//V5UIK7kNJrGaaCPY8hJeLmg8Ipqc96GoxkDDNW6pXpJQgBujng
-//n7OmEbW3gHC0Qges8nz5zOPeqQpeYclyUbczGOOEbXI1O1FdF8 Secure
+};
+function CameraCtrl($scope, camera){
+
+}
+function BrowserCtrl($scope){
+
+}
+function GeoCtrl($scope, position){
+
+}
+
 function DiscussionCtrl($scope){
   $scope.disc1 = "Discussion Week 1";
 }
-
-//e4b0dec3215d800666d000845ad664ff
-
-//Secret:6d6124db5dce47b0 
