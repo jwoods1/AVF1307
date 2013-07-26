@@ -111,6 +111,4 @@
         <param name="ios-package" value="CDVLocalStorage"/>
     </feature>
     <!-- Deprecated plugins element. REmove in 3.0 -->
-    <plugins>
-    </plugins>
 </widget>
