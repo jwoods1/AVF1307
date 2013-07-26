@@ -18,7 +18,7 @@ angular.module('App', ['App.services','App.controllers'])
             templateUrl: 'partials/accelerometer.html'
         })
 
-        .when('/index.html/Dicussions', {
+        .when('/index.html/Discussions', {
             controller: 'DiscussionCtrl',
             templateUrl: 'partials/Discussions.html'
         })

@@ -22,8 +22,7 @@ function onSuccess(acceleration) {
     var element = document.getElementById('accelerometer');
     element.innerHTML = 'Acceleration X: ' + acceleration.x + '<br />' +
                         'Acceleration Y: ' + acceleration.y + '<br />' +
-                        'Acceleration Z: ' + acceleration.z + '<br />' +
-                        'Timestamp: '      + acceleration.timestamp + '<br />';
+                        'Acceleration Z: ' + acceleration.z;
 }
  // Error
 function onError() {

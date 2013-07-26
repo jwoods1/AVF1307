@@ -1,21 +1,43 @@
-<div class="container fixed">
+<div class="container">
                 <div class="page-header">
                   <h1>Discussions</h1>
                 </div>
                 <div ng-controller="DiscussionCtrl">
-                   <h3>{{disc1}}</h3>
-                   <p>After reading several different APIs this week I think that Twitter could be used in so many ways.  When used for login it allows for faster registration for the user, and it is one less password they have to remember.  After they have logged in it also allows for the app to pull in data from Twitter to fill in the more annoying stuff for registration.  As for payments they offer some security features that could help with user trust. It would also help with easy of payment with the login to pay with Twitter. 
+                  
+
+
+  <accordion close-others="oneAtATime">
+    <accordion-group heading="{{disc1}}">
+      <p class="discussion">After reading several different APIs this week I think that Twitter could be used in so many ways.  When used for login it allows for faster registration for the user, and it is one less password they have to remember.  After they have logged in it also allows for the app to pull in data from Twitter to fill in the more annoying stuff for registration.  As for payments they offer some security features that could help with user trust. It would also help with easy of payment with the login to pay with Twitter. 
                     </p>
-                    <p>
+                    <p class="discussion">
                     The need to use JSON-P allows for the developer to connect to a server in a different domain. This is not normally allowed in typical browsers because of the same origin policy.  This opens up the possibilities to pull in live data from other websites to be used on your own site. 
                 </p>
-                    <p>
+                    <p class="discussion">
                     After going over Programmableweb.com and searching for JSON-P data resources I found out that your have a lot of choices.  Some that I’m interested in include maps that could allow the geo-location of the phone to display a map of the location. Also looking at real estate this could also use the geo-location feature.  Some of these also could work well with the camera so that you could map where you took a photo. Using the push notification you could update the user about homes for sale in their location. Just have some many options in order to discover all the possibilities I will just have to play with mashing some of these together.</p> 
-                    <p>
+                    <p class="discussion">
                     I want to do so much this month I think my head is going to explode.  With that being said I am going to have to pick and choose what I want to include in this project.  For the most part I want it to include some key device elements such as the accelerometer, capture, camera, geolocation. I would also be cool to use some of the users contacts to maybe email or message from within the app.  I would like to have the Instagram pull in and be searchable with the ability to post to the server.  I was thinking about trying to pull in a live race timer for motocross and have an Instagram feed that would display posts with the #motocross.  I would like to use the accelerometer to maybe have some object move around the screens as well (maybe a motorcycle). For the camera I would like to store the photo on the device. I have a big and not much time to get it all done. </p>
-                    <p>
+                    <p class="discussion">
                     Some of my lessons learned so far in this degree program have been mostly time related. I learned that if you can’t get something figured out it is sometimes best to take a break.  This has helped me overcome several different obstacles.  I also learned that if you talk out the problem with someone else or bounce ideas off of someone not involved in the project it can help solve the problem or create some good ideas.  For the most part my lesson learned is to not over think stuff and try not to bite off more then you can chew.  (I do this a lot).
                     </p>                
+    </accordion-group>
+    <accordion-group heading="{{disc2}}">
+    <p class="discussion">
+        I think that making a site accessible is almost mandatory now.  The way that HTML5 is going more semantic with making the web page more readable is a big help.  When I started working with Angularjs I noticed that you could create directives with tags that defined the view.  So you could create a tag called what ever you where displaying.  I think that I could do this with my site.  This will make it easier fore the screen reader to scan through and read what is on the site. 
+    </p>
+    <p class="discussion">
+        When referencing Youtube.com for videos on accessibility I found some very frustrating things.  When the reader says unlabeled on any kind of button or feature of the website. Also a site with no header tags or H tags make the site hard to read.  This causes the site to not really have a reference for them to separate content.  I think by making sure that I have everything properly labeled and tagged will help with this problem.  
+    </p>
+    <p class="discussion">
+        Some phones and devices are made to support accessibility. Some of these are iPhone and Android phones.  They have created some great text to speech and speech to text capabilities.  They have included some great tools like Siri that can even search the web or place a call for you.  Most of these platforms have great apps that you can download for a reasonable price as well. I found this one call Shrine Reader.  It makes the Android have a 12-touch position touch screen. It helps for referencing the touch portions of the phone so blind people could use it.  When using the accessibility mode on the iPhone it makes a lot of the everyday apps accessible.  It will read all the headlines and feature of Youtube.com and Twitter.  Overall in the last 5 years I think accessibility as gone leaps and bounds.  
+    </p>
+      
+    </accordion-group>
+  </accordion>
+
+    
+                   <h2 class="Disctitle"></h2>
+                   
                 </div>
                 
             </div>
