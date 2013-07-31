@@ -1,0 +1,36 @@
+<div class="container fixed">
+                <div class="page-header">
+                   <section>
+            <a id="CheckConButton" data-role="button">Check the Connection!</a>
+            <label id="connectionName">Connection Type!</label>
+            <input id="connectionID"/>
+          </section>
+                  <h1>Instagram Popular</h1>
+                </div>
+                <div ng-controller="InstagramCtrl">
+                    <div  class="row">
+                    <carousel interval="myInterval">
+                        <slide ng-repeat="i in instagramResult.data" active="slide.active">
+                          <img ng-src="{{i.images.standard_resolution.url}}" alt="insta image" style="margin:auto;">
+                          <div class="carousel-caption">
+                            <h4>{{i.user.username}}</h4>
+                          </div>
+                        </slide>
+                      </carousel>
+                </div>
+                      <div class="page-header">
+                  <h1>Tumblr Popular</h1>
+                </div>
+                <div ng-controller="TumblrCtrl" class="row">
+                   
+                    <carousel interval="myInterval">
+                        <slide ng-repeat="i in tumblrResult.response" active="slide.active">
+                          <img ng-src="{{i.photos.0.original_size.url}}" alt="Tumblr image" style="margin:auto;">
+                          <div class="carousel-caption">
+                            <h4>{{i.blog_name}}</h4>
+                          </div>
+                        </slide>
+                      </carousel>
+               
+                </div>
+            </div>
