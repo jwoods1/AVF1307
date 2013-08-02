@@ -16,25 +16,29 @@
         <bootstrap-navbar></bootstrap-navbar>
             <div ng-view  ng-animate=" 'animate' ">
         </div>
+
     </div>
     <div id="footer">
       <div class="container">
-        <p class="muted credit">By Jason Woods <a href="www.fullsail.edu">Full Sail University</a> </p>
+        <p class="muted credit">By Jason Woods <a href="http://www.fullsail.edu">Full Sail University</a> </p>
       </div>
     </div>
 
     <!-- Libs -->
-    
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=true&amp;libraries=places"></script>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="lib/angular-google-maps.js"></script>
     <script type="text/javascript" src="lib/jquery.js"></script>
     <script type="text/javascript" src="lib/angular-1.1.5.min.js"></script>
     <script type="text/javascript" src="lib/angular-resource.min.js"></script>
     <script type="text/javascript" src="lib/ui-bootstrap-custom-tpls-0.4.0.min.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
     <!-- App -->
+  
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/services.js"></script>
-    <script type="text/javascript" src="js/Directives.js"></script>
+    <script type="text/javascript" src="js/directives/Directives.js"></script>
     <script type="text/javascript" src="js/controllers.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript">
