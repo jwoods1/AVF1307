@@ -19,12 +19,11 @@
 
   html,
       body {
-        background-color: rgb(228, 226, 226);
+        background-color: ;
         height: 100%;
       
-      
-        /* The html and body elements cannot have any padding or margin. */
       }
+        
       .carousel{
         width:85%;
         margin: auto;
@@ -33,6 +32,10 @@
       .carousel img{
         height: 400px;
         width:400px;
+      }
+      #map{
+      width:100%;
+      heigth:200px;
       }
 
       /* Wrapper for page content to push down footer */
@@ -63,17 +66,16 @@
   }
 
       /* Lastly, apply responsive CSS fixes as necessary */
-      @media (max-width: 780px){
+      @media (max-width: 580px){
        
       .container{
-        width:640px;
+        width:240px;
       }
       .accordion-heading .accordion-toggle {
     display: block;
     padding: 8px 15px;
     color: white;
   }
-  
         #footer {
           margin-left: -20px;
           margin-right: -20px;
@@ -86,9 +88,7 @@
           
           
         }
-        .nav{
-
-        }
+        
         .navbar{
           width:auto;
           margin: auto;
@@ -117,7 +117,7 @@
         }
         .span3{
       width: 36%;
-      padding: -50px;
+      padding: 50px;
       
       
       }
@@ -143,8 +143,11 @@
 
     }
       }
+      h1{
+        text-shadow:4px 5px 3px gray;
+      }
       /* Custom page CSS
-
+      
       -------------------------------------------------- */
       /* Not required for template or sticky footer method. */
         .discussion{
@@ -184,3 +187,32 @@
       code {
         font-size: 80%;
       }
+
+      /*Animation */
+
+.animate-enter, 
+.animate-leave
+{ 
+    -webkit-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -moz-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -ms-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -o-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    position: relative;
+    display: block;
+} 
+ 
+.animate-enter.animate-enter-active, 
+.animate-leave {
+    opacity: 1;
+    right: 0;
+    height: 30px;
+}
+ 
+.animate-leave.animate-leave-active,
+.animate-enter {
+    opacity: 0;
+    right: -50px;
+    height: 0px;
+}
+

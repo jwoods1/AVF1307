@@ -7,7 +7,6 @@ angular.module('App', ['App.services','App.controllers'])
         .when('/index.html', {
             templateUrl: 'partials/main.html',
             controller: 'iconCtrl'
-            
         })
         .when('/index.html/Capture', {
             controller: 'InstagramCtrl',
@@ -17,7 +16,6 @@ angular.module('App', ['App.services','App.controllers'])
             controller: 'AccelCtrl',
             templateUrl: 'partials/accelerometer.html'
         })
-
         .when('/index.html/Discussions', {
             controller: 'DiscussionCtrl',
             templateUrl: 'partials/Discussions.html'
@@ -26,13 +24,13 @@ angular.module('App', ['App.services','App.controllers'])
             controller: 'CameraCtrl',
             templateUrl: 'partials/camera.html'
         })
-        .when('/index.html/InAppBrowser', {
-            controller: 'BrowserCtrl',
-            templateUrl: 'partials/browser.html'
-        })
         .when('/index.html/Geolocation', {
             controller: 'GeoCtrl',
             templateUrl: 'partials/geolocation.html'
+        })
+        .when('/index.html/InAppBrowser', {
+            controller: 'InAppBrowserController',
+            templateUrl: 'partials/browser.html'
         })
         .otherwise({redirectTo: '/index.html'});
     }]);
